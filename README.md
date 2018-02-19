@@ -19,5 +19,6 @@ npm start
 
 If everything goes as planned, you will find the app service live at http://localhost:3000
 
-example to test: http://localhost:3000/?url=https://snap21.com/reviews/eagers-mazda-newstead-qld
+example to test: 
+Send GET Request to => http://localhost:3000/?url=https://snap21.com/reviews/eagers-mazda-newstead-qld
 
