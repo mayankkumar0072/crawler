@@ -1,0 +1,18 @@
+{
+  "name": "crawler",
+  "version": "1.0.0",
+  "description": "crawl snap21 review pages for data",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "mocha --timeout 10000"
+  },
+  "author": "mayank",
+  "license": "ISC",
+  "dependencies": {
+    "phantomjs": "^2.1.7"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.1"
+  }
+}
