@@ -3,6 +3,7 @@
 To run this application locally, you would have to run the following commands.
 
 git clone https://github.com/mayankkumar0072/crawler.git
+
 cd crawler
 ```
 
