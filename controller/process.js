@@ -14,21 +14,20 @@ class Process{
 
   processStart(request_url,callback){
     var phantomArgs = [__dirname+ "/../middleware/webpage.js",request_url];
-    console.log(phantomArgs);
     var child_process = childProcess.spawn(PHANTOM_SERVICE, phantomArgs);
 
     child_process.stdout.on("data", (data) => {
-      // console.log(data.toString());
-      callback(null, data.toString())
+      console.error(data.toString());
+      callback(null, data.toString());
     });
 
     child_process.stderr.on("data", (data) => {
-      console.error(data.toString());
       callback(`error: can't able to crawl the given url`, null);
     });
 
     child_process.on('close', (code) => {
       console.log(`child process exited with code ${code}`);
+      callback(null, 'close');
     });
 
   }
